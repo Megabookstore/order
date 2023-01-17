@@ -1,6 +1,5 @@
-package com.megabookstore.api.order;
+package com.megabookstore.api;
 
-import com.megabookstore.api.order.entity.OrderSubscription;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
