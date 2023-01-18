@@ -23,7 +23,7 @@ public class OrderSubscription {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long orderSubscriptionNo;
 
-    @OneToOne // TODO #2 :구독과 주문과의 관계를 어떻게 봐야할까?
+    @OneToOne
     @JoinColumn
     private Order orderNo;
 }

@@ -34,6 +34,6 @@ public class OrderProduct {
     @Column(nullable = false, columnDefinition = "integer default 1")
     private int count;
 
-    @Column(nullable = false) // TODO #3: isHidden 보단 Hidden ??
-    private boolean isHidden;
+    @Column(nullable = false)
+    private boolean hiddenYn;
 }

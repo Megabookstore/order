@@ -28,7 +28,7 @@ public class Order {
     @Column(nullable = false, updatable = false)
     private LocalDateTime orderCreatedAt;
 
-    @Column(nullable = false) // TODO #1: 컬럼 이름 바꾸는 게 어떨지? Subscription이 더 나을듯?
+    @Column(nullable = false)
     private boolean isSubscribed;
 
     @CreatedDate
