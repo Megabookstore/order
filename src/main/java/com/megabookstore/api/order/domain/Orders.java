@@ -12,7 +12,7 @@ import org.springframework.data.annotation.CreatedDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Order {
+public class Orders {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,7 +29,7 @@ public class Order {
     private LocalDateTime orderCreatedAt;
 
     @Column(nullable = false)
-    private boolean isSubscribed;
+    private boolean subscriptionYn;
 
     @CreatedDate
     @Column(nullable = false)

@@ -1,6 +1,6 @@
 package com.megabookstore.api.order_subscription.domain;
 
-import com.megabookstore.api.order.domain.Order;
+import com.megabookstore.api.order.domain.Orders;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,5 +25,5 @@ public class OrderSubscription {
 
     @OneToOne
     @JoinColumn
-    private Order orderNo;
+    private Orders ordersNo;
 }

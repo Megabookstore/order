@@ -1,6 +1,6 @@
 package com.megabookstore.api.order_product.domain;
 
-import com.megabookstore.api.order.domain.Order;
+import com.megabookstore.api.order.domain.Orders;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,7 +26,7 @@ public class OrderProduct {
 
     @OneToOne
     @JoinColumn(unique = true)
-    private Order orderNo;
+    private Orders ordersNo;
 
     @Column(nullable = false, unique = true)
     private Long productNo;
