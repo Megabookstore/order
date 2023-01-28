@@ -35,4 +35,6 @@ public class Orders {
     @Column(nullable = false)
     private LocalDate selectedDeliveryDate;
 
+    @Embedded
+    private PayYn payYn;
 }

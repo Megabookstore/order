@@ -9,9 +9,11 @@ pipeline {
         // 환경설정 ex) AWS ACCESS KEY, SECRET, REGION 등을 지정
     }
 
-    stages {
+    stages { // 모든 stage를 순서대로 실행한다.
         stage('Prepare') {
-            // switch-case문처럼 조건에 맞는 stage를 실행한다.
+            when {
+                // 조건에 맞을 때, 실행하는 로직
+            }
         }
     }
-}화
+}
