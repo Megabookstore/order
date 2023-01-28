@@ -246,6 +246,7 @@ gradle-app.setting
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+jenkins.gdsl
 
 ### Gradle Patch ###
 # Java heap dump

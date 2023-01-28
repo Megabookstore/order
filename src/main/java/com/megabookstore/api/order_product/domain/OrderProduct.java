@@ -2,6 +2,7 @@ package com.megabookstore.api.order_product.domain;
 
 import com.megabookstore.api.order.domain.Orders;
 import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -31,9 +32,6 @@ public class OrderProduct {
     @Column(nullable = false, unique = true)
     private Long productNo;
 
-    @Column(nullable = false, columnDefinition = "integer default 1")
-    private int count;
-
-    @Column(nullable = false)
-    private boolean hiddenYn;
+    @Embedded
+    private Count count;
 }
